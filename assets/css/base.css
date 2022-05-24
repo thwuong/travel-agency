@@ -1,5 +1,5 @@
 /* Font google */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap");
 /* Root */
 :root {
   --color-primary: #fa7436;
@@ -9,6 +9,8 @@
   --fw-title: 600;
   --fw-content: 500;
   --fw-text: 400;
+  --font-text: "Poppins", sans-serif;
+  --font-heading: "Volkhov", serif;
 }
 /* Reset css */
 * {
@@ -22,7 +24,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-text);
 }
 ol,
 ul {
