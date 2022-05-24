@@ -1,0 +1,41 @@
+.wide {
+  width: 100%;
+}
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 11.4rem;
+  display: flex;
+  align-items: center;
+}
+.header__controls {
+  display: flex;
+  margin-left: 23.6rem;
+}
+.header__menu {
+  display: flex;
+}
+.header__item {
+  margin-right: 3.2rem;
+}
+.header__auth {
+  margin-left: 12.6rem;
+}
+.header__login {
+  margin-right: 5.3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.header__register {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 1.3rem 5rem;
+  background: #fa7436;
+  border-radius: 5px;
+}
+
+/* Hero */
