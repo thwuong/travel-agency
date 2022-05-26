@@ -5,7 +5,7 @@
   width: 1170px;
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .header {
   width: 100%;
@@ -51,6 +51,7 @@
 
 /* Hero */
 .hero {
+  overflow: hidden;
   padding-bottom: 12rem;
   width: 100%;
   background: #fefcfb;
@@ -139,9 +140,9 @@
 /* Todo */
 .todo {
   width: 100%;
-  position: relative;
-  background: url("../img/BG.png");
   padding: 12rem 0;
+  position: relative;
+  background: #f7f8fc;
 }
 .todo__img-bg {
   position: absolute;
@@ -218,11 +219,13 @@
   margin-top: 6.4rem;
 }
 .place-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0 2.8rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 0 3rem;
 }
 .place-item {
+  min-width: 23%;
   background: #fefcfb;
   border-radius: 10px;
   border: 2px solid rgba(102, 102, 102, 0.08);
@@ -319,8 +322,8 @@
   gap: 0 2.4rem;
 }
 
-.place__pre,
-.place__next {
+.btn-pre,
+.btn-next {
   color: var(--color-text-secondary);
   border: 2px solid rgba(102, 102, 102, 0.08);
   width: 4rem;
@@ -332,8 +335,36 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.place__pre:hover,
-.place__next:hover {
+.btn-pre:hover,
+.btn-next:hover {
   color: #ffffff;
   background: var(--color-primary);
+}
+/* Tour */
+.tour {
+  background: #fefcfb;
+  padding: 12rem 0;
+}
+.tour__content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.tour__heading {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-content);
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+.tour__description {
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: var(--fw-text);
+  color: var(--color-text-secondary);
+}
+.tour__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 3rem;
 }
