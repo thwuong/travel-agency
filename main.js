@@ -43,7 +43,7 @@ function handleSliderTour() {
   const btnPre = document.querySelector(".tour__pre");
   const btnNext = document.querySelector(".tour__next");
   const tourItems = document.querySelectorAll(".tour-item");
-  const maxLength = [...tourItems].length / 3 - 1;
+  const maxLength = [...tourItems].length - 3;
   var index = 0;
   btnPre.addEventListener("click", function () {
     changeSlider(-1);
@@ -57,12 +57,12 @@ function handleSliderTour() {
       index++;
       if (index <= maxLength) {
         tourItems.forEach((item) => {
-          item.style = `transform : translateX(-${315 * index}%)`;
+          item.style = `transform : translateX(-${105 * index}%)`;
         });
       } else {
         index = 0;
         tourItems.forEach((item) => {
-          item.style = `transform : translateX(-${315 * index}%)`;
+          item.style = `transform : translateX(-${105 * index}%)`;
         });
       }
     } else {
@@ -70,11 +70,11 @@ function handleSliderTour() {
       if (index < 0) {
         index = maxLength;
         tourItems.forEach((item) => {
-          item.style = `transform : translateX(-${315 * index}%)`;
+          item.style = `transform : translateX(-${105 * index}%)`;
         });
       } else {
         tourItems.forEach((item) => {
-          item.style = `transform : translateX(-${315 * index}%)`;
+          item.style = `transform : translateX(-${105 * index}%)`;
         });
       }
     }
