@@ -17,36 +17,40 @@
   </head>
   <body>
     <div class="wide">
-      <div class="container">
-        <header class="header">
-          <div class="header__logo">
-            <img src="./assets/img/Logo.svg" alt="" class="header__img" />
-          </div>
-          <div class="header__controls">
-            <ul class="header__menu">
-              <li class="header__item">
-                <a href="#" class="header__item__link">Home</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item__link">About</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item__link">Destination</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item__link">Tour</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item__link">Blog</a>
-              </li>
-            </ul>
-            <div class="header__auth">
-              <span class="header__login btn btn-secondary"> Login </span>
-              <span class="header__register btn btn-primary"> Sign up </span>
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <div class="header__logo">
+              <img src="./assets/img/Logo.svg" alt="" class="header__img" />
+            </div>
+            <div class="header__controls">
+              <ul class="header__menu">
+                <li class="header__item">
+                  <a href="#" class="header__item__link">Home</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item__link">About</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item__link">Destination</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item__link">Tour</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item__link">Blog</a>
+                </li>
+              </ul>
+              <div class="header__auth">
+                <span class="header__login btn btn-secondary"> Login </span>
+                <span class="header__register btn btn-primary"> Sign up </span>
+              </div>
             </div>
           </div>
-        </header>
-        <section class="hero">
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
           <div class="hero__main">
             <div class="hero__content">
               <h2 class="hero__heading">
@@ -57,7 +61,7 @@
                 A Team of experienced tourism professionals will provide you
                 with the best advice and tips for your desire place.
               </span>
-              <span class="hero__discover"> Discover Now </span>
+              <span class="hero__discover btn"> Discover Now </span>
             </div>
             <div class="hero__image">
               <img
@@ -88,10 +92,10 @@
                 <span class="hero__description">Number of guest</span>
               </div>
             </div>
-            <span class="hero__control">Explore Now</span>
+            <span class="hero__control btn">Explore Now</span>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="todo">
         <div class="container">
           <div class="todo__img">
@@ -532,6 +536,191 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__container">
+            <h2 class="blog__heading">
+              Get update with <span class="highlight"> latest blog </span>
+            </h2>
+            <div class="blog__slider">
+              <div class="blog-list">
+                <div class="blog-item">
+                  <div class="blog-item__img">
+                    <img srcset="./assets/img/blog1.png 2x" alt="blog1" />
+                  </div>
+                  <div class="blog__content">
+                    <span class="blog-item__title">
+                      The Amazing Difference a Year of Travelling .
+                    </span>
+                    <span class="blog-item__created-date">July 27, 2021</span>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="blog-item__img">
+                    <img srcset="./assets/img/blog2.png 2x" alt="blog2" />
+                  </div>
+                  <div class="blog__content">
+                    <span class="blog-item__title">
+                      Travel far enough, you meet yourself.
+                    </span>
+                    <span class="blog-item__created-date">July 27, 2021</span>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="blog-item__img">
+                    <img srcset="./assets/img/blog3.png 2x" alt="blog3" />
+                  </div>
+                  <div class="blog__content">
+                    <span class="blog-item__title">
+                      How to Save Money While Visiting Africa
+                    </span>
+                    <span class="blog-item__created-date">July 27, 2021</span>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="blog-item__img">
+                    <img srcset="./assets/img/blog4.png 2x" alt="blog4" />
+                  </div>
+                  <div class="blog__content">
+                    <span class="blog-item__title">
+                      Reflections on 5 Months of Travel: Time to Hang
+                    </span>
+                    <span class="blog-item__created-date">July 27, 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="blog__dots dots">
+              <li class="dot__item active"></li>
+              <li class="dot__item"></li>
+              <li class="dot__item"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__container">
+            <div class="contact__img-top">
+              <img srcset="./assets/img/Element4.png 2x" alt="" />
+            </div>
+            <div class="contact__content">
+              <h2 class="contact__heading">
+                Subscribe and get exclusive deals & offer
+              </h2>
+              <form class="contact__form">
+                <div class="contact__mail">
+                  <label for="mail" class="contact__label"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></label>
+                  <input
+                    id="mail"
+                    type="mail"
+                    class="contact__input"
+                    placeholder="Enter your mail"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn contact__btn">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="contact__img-bottom">
+              <img srcset="./assets/img/Element3.png 2x" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div class="footer__logo">
+                <img src="./assets/img/Logo.svg" alt="logo-footer" />
+              </div>
+              <span class="footer__description">
+                Book your trip in minute, get full Control for much longer.
+              </span>
+              <ul class="footer__socials">
+                <li class="footer__social">
+                  <a href="#" class="footer__social-icon"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="footer__social active">
+                  <a href="#" class="footer__social-icon"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="footer__social">
+                  <a href="#" class="footer__social-icon"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <div class="footer__link">
+                <h5 class="footer__name">Company</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">About</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Careers</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Logistic</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Privacy and Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__link">
+                <h5 class="footer__name">Contact</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Help/FAQ</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Press</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Affilates</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__link">
+                <h5 class="footer__name">More</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Press Centre</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Our Blog</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Low fare tips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container"><div class="line"></div></div>
+      <section class="policy">
+        <div class="container">
+          <div class="policy__container">
+            <span class="policy__copy-right"
+              >Copyright, Trabook 2022. All rights reserved.</span
+            >
+            <span class="policy__condition">Terms & Conditions</span>
           </div>
         </div>
       </section>

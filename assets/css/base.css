@@ -34,3 +34,11 @@ a {
   text-decoration: none;
   color: var(--color-text-primary);
 }
+input {
+  border: none;
+  outline: none;
+}
+button {
+  outline: none;
+  border: none;
+}
