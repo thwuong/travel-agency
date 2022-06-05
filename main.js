@@ -82,3 +82,19 @@ function handleSliderTour() {
 }
 handleSliderPlace();
 handleSliderTour();
+toggleMenu();
+function toggleMenu() {
+  var isOpen = false;
+  const menuMobile = document.querySelector(".menu__mobile");
+  const taskMenu = document.querySelector(".header__controls");
+  const closeMenu = document.querySelector(".menu__close");
+
+  menuMobile.addEventListener("click", function () {
+    isOpen = !isOpen;
+    taskMenu.classList.toggle("open", isOpen);
+  });
+  closeMenu.addEventListener("click", function () {
+    isOpen = false;
+    taskMenu.classList.remove("open");
+  });
+}
